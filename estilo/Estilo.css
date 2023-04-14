@@ -1,0 +1,136 @@
+h1 {
+    display: inline-flex;
+    font-family: "Impact", sans-serif;
+    background: url("https://picsum.photos/1920/1080");
+    font-size: 8rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #88bbf154;
+    animation: move 30s linear infinite;
+    letter-spacing: .3rem;
+  }
+  @keyframes move {
+    from { background-position: 0 80%; }
+    to { background-position: 100% 50%; }
+  }
+
+    /* FOR DEMO PURPOSES */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      svg {
+        max-width: 900px;
+      }
+
+      body {
+        heigh:500px;
+        background-image: url("https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/06/yousef-espanioly-DA_tplYgTow-unsplash-scaled.jpg?fit=2560%2C1702&quality=50&strip=all&ssl=1");
+        background-size: 90rem
+
+      }
+
+/* CSS */
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 30px;
+    color: #a2b5cd;
+}
+
+footer.top {
+    border-bottom: 2px salid #3a4f6a;
+    padding-bottom:  20px;
+}
+
+footer.top .links {
+    display: grid;
+    grid-template-columns: repeat(2, lfr);
+    gap: 30px;
+}
+
+footer.bottom {
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+footer .links > div {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f7f7f7;
+}
+
+footer .legal {
+    font-size: 12px;
+}
+
+footer .legal > a {
+    margin: 0 4px;
+}
+
+footer .legal > span {
+    margin-right: 10px;
+}
+
+/* CSS */
+
+footer.bottom .links {
+    display: flex;
+    gap: 18px;
+}
+
+@media(width < 620px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer.bottom {
+        gap: 16px;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (width ><0 620px) {
+    footer {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 0;
+    }
+}
+
+footer.bottom .links > a {
+    font-size: 24px;
+}
+
+@media (width < 420px) {
+    footer {
+        text-align: center;
+        align-items: center;
+    }
+
+    footer.top .links {
+        grid-template-columns: lfr;
+    }
+
+    footer.bottom {
+        align-items: center;
+    }
+
+    footer .legal > span {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 2px;
+    }
+}
+
